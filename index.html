@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>TecServ</title>
+	<link rel="stylesheet" type="text/css" href="index_css.css">
+	</head>
+	<body style="font-family: Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif" >
+		<cuadro>
+		<cabezera>
+			<h1>TECNOLOGIC-SERVICE</h1>
+		</cabezera>
+		<MenLateral>
+    		 <!-- <li><a href="noticias.html" target="targetframe">Noticias</a></li> -->
+    		<button class="noticias" onclick="linkNoti('noticias.html')">Noticias</button>
+    		<div class="raya" style="width:200px ; height:8px"> </div>
+    		<button class="noticias" onclick="linkNoti('Qsomos.html')">Quienes Somos</button>
+    		<div class="raya" style="width:200px ; height:8px"> </div>
+    		<button class="noticias" onclick="linkNoti('servicios.html')">Servicios</button>
+    		<div class="raya" style="width:200px ; height:8px"> </div>
+    		<button class="noticias" onclick="linkNoti('proyectos.html')">Proyectos</button>
+    		<div class="raya" style="width:200px ; height:8px"> </div>
+    		<button class="noticias" onclick="linkNoti('contacto.html')">Contacto</button>
+    		<div class="raya" style="width:200px ; height:8px"> </div>
+  		</MenLateral>
+  		
+    	<iframe src="noticias.html" id="targetframe" frameborder="0" scrolling="yes" ></iframe>
+
+    	<script>
+    	function linkNoti(source)
+    		{
+    		document.getElementById("targetframe").src = source ;
+
+    		}
+    	</script>
+    	</cuadro>
+  	</body>
+</html>
